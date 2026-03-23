@@ -115,6 +115,11 @@ When working on a task, prefer this output order:
 5. validation results
 6. optional fact write-back suggestions
 
+Default language rule:
+
+- use Chinese for user-visible output unless the user explicitly requests another language
+- keep code, commands, paths, identifiers, and quoted literals in the form most useful for execution and review
+
 ## Editing expectations
 
 When changing this repository itself:

@@ -17,3 +17,4 @@ Additional instructions:
 - prefer black-box validation by default
 - add white-box validation only when justified
 - do not write temporary reasoning into `docs/facts/`
+- use Chinese for user-visible summaries, progress updates, validation notes, and final output unless the task explicitly requires another language
