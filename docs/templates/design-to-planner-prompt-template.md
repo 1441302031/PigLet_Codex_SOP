@@ -1,21 +1,13 @@
-# Design to Planner Prompt Template
+# Design to Planner Prompt
 
-```
-Transform the following design input into an engineering plan.
+Read `AGENTS.md` first.
 
-Design input:
-{{design_input}}
+Convert the following design, PRD, or request into one narrow executable task spec.
 
-Required output:
-1. Problem statement
-2. Scope and non-scope
-3. Assumptions and unknowns
-4. Step-by-step implementation plan
-5. Validation strategy
-6. Risk register with mitigations
-
-Constraints:
-- Prefer small safe increments.
-- Keep acceptance criteria observable.
-- Mark any missing information explicitly.
-```
+Requirements:
+- keep scope narrow
+- define non-goals
+- identify likely target files
+- define explicit validation
+- use `docs/templates/task-spec-template.md`
+- place the result in `docs/specs/`

@@ -1,26 +1,19 @@
 # Codex Task Prompt Template
 
-Use this prompt to run a task from a prepared spec.
+Read `AGENTS.md` and the relevant local `AGENTS.md` files first.
 
-```
-You are implementing a task from a repository SOP.
+Then do the following:
 
-Inputs:
-- Spec file: {{spec_path}}
-- Facts index: docs/facts/facts-index.md
-- Validation policy: docs/facts/validation-policy.md
+1. summarize your understanding of the task and constraints
+2. decide whether an existing spec can be reused
+3. if needed, create a narrow task spec in `docs/specs/`
+4. implement the smallest coherent change
+5. validate explicitly
+6. suggest stable fact write-back only if justified
 
-Execution requirements:
-1. Restate scope and assumptions.
-2. Implement only what is in scope.
-3. Run required validation checks.
-4. Produce a concise change summary.
-5. Write back newly confirmed facts.
+Additional instructions:
 
-Output format:
-- Scope confirmation
-- Implementation notes
-- Validation evidence
-- Risks
-- Fact writeback
-```
+- do not expand scope
+- prefer black-box validation by default
+- add white-box validation only when justified
+- do not write temporary reasoning into `docs/facts/`

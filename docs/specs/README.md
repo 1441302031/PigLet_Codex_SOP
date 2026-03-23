@@ -1,19 +1,31 @@
-# Specs README
+# Task Specs
 
-Store one file per task in this directory.
+Task specs are the default durable execution artifact between planning and implementation.
+
+## When to create a spec
+
+Create a spec when the task is not trivially narrow.
+
+Use a spec when:
+
+- the scope needs review
+- the validation path matters
+- the work may need iteration
+- the task may be handed off
+
+## Naming convention
+
+Use dated filenames:
+
+`YYYY-MM-DD-short-task-name.md`
+
+Example:
+
+`2026-03-23-add-bulk-export-validation.md`
 
 ## Lifecycle
 
-1. Create file from `docs/templates/task-spec-template.md`.
-2. Fill the required `Plan` and `Spec` sections.
-3. Execute implementation against the spec.
-4. Append validation results and change summary.
-5. Add fact writeback only when the task produced a new durable, evidence-backed fact.
-
-## Tips
-
-- Keep assumptions explicit.
-- Keep acceptance criteria observable.
-- Keep risk mitigation actionable.
-- Keep fact writeback limited to durable, evidence-backed knowledge.
-- Use `N/A` when no stable fact was learned.
+1. derive spec from plan or scoped request
+2. implement narrowly against the spec
+3. refine the spec if the slice is still the same
+4. create a new spec if the task materially changes

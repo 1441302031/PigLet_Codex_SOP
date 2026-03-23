@@ -1,30 +1,31 @@
-# Plan Template
+# Plan: <initiative or slice name>
 
-## Task
+## Goal
 
-`{{task_title}}`
+What outcome this plan is driving.
 
-## Objective
+## Current state
 
-`{{objective}}`
+Relevant current reality.
+
+## Target state
+
+What success looks like.
 
 ## Constraints
 
-- `{{constraint_1}}`
-- `{{constraint_2}}`
+- scope
+- timeline
+- risk
+- dependencies
 
-## Work Plan
+## Phase slices
 
-1. `{{step_1}}`
-2. `{{step_2}}`
-3. `{{step_3}}`
+1. phase or slice one
+2. phase or slice two
+3. phase or slice three
 
-## Risks
+## Recommended next task specs
 
-- `{{risk_1}}` -> `{{mitigation_1}}`
-- `{{risk_2}}` -> `{{mitigation_2}}`
-
-## Validation Plan
-
-- `{{check_1}}`
-- `{{check_2}}`
+- spec candidate 1
+- spec candidate 2

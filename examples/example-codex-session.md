@@ -1,24 +1,17 @@
 # Example Codex Session
 
-## User Request
+## Prompt 1
 
-"Create repository structure and fill SOP templates."
+Read `AGENTS.md` and derive a narrow task spec for adding validation to the export workflow. Put the spec in `docs/specs/`.
 
-## Agent Execution Snapshot
+## Prompt 2
 
-1. Read repository tree.
-2. Create missing folders and files.
-3. Fill guides, templates, and skills.
-4. Validate file completeness.
-5. Provide concise summary and next step.
+Use the new spec and implement the smallest coherent change.
 
-## Example Final Summary
+## Prompt 3
 
-- Repository structure is complete.
-- Core SOP files are populated.
-- Templates are ready for direct use.
-- Skills define repeatable execution behavior.
+Validate explicitly. If black-box checks are insufficient, use the white-box test skill.
 
-## Example Follow-up
+## Prompt 4
 
-"Please align wording with our internal style guide."
+Suggest stable fact write-back only if justified.

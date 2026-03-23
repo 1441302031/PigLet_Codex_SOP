@@ -1,22 +1,13 @@
 # Architecture Decisions
 
-## ADR-001: Spec-First Workflow
+## ADR-001: SOP execution is spec-driven
 
-- Status: accepted
-- Context: ad hoc coding leads to drift and unclear acceptance.
-- Decision: require written task spec before non-trivial implementation.
-- Consequence: slightly higher upfront effort, much clearer execution.
+Task specs in `docs/specs/` are the default durable artifact between planning and implementation.
 
-## ADR-002: Fact Writeback
+## ADR-002: Stable knowledge only goes to facts
 
-- Status: accepted
-- Context: repeated rediscovery slows delivery.
-- Decision: write back stable findings into facts docs.
-- Consequence: lower future onboarding and investigation cost.
+`docs/facts/` stores only stable reusable context, not temporary task reasoning.
 
-## ADR-003: Small Safe Changes
+## ADR-003: Repeated workflows become skills
 
-- Status: accepted
-- Context: large diffs increase risk and review load.
-- Decision: ship minimal cohesive changes with explicit validation.
-- Consequence: faster feedback loops and safer rollback.
+When a workflow is repeated and stable, it should be promoted into `skills/`.

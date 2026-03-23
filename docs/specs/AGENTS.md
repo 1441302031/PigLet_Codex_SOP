@@ -1,22 +1,27 @@
-# Specs Folder Rules
+# AGENTS.md for docs/specs
 
-This folder stores task-level specs and execution notes.
+## Purpose
 
-## Naming
+This directory contains durable task execution specs.
 
-- Use `YYYY-MM-DD-task-name.md`.
-- Keep names concise and behavior-focused.
+## Spec expectations
 
-## Minimum Sections
+Each spec should define:
 
-1. Context
-2. Scope and non-scope
-3. Plan
-4. Acceptance criteria
-5. Validation
-6. Risks
-7. Change summary
+- objective
+- scope
+- non-goals
+- target files or systems
+- implementation notes
+- validation plan
+- completion criteria
 
-## Completion Rule
+## Rules
 
-A spec is complete when implementation and validation evidence are both present.
+- keep specs narrow
+- keep them implementation-guiding, not essay-like
+- prefer concrete validation steps
+- include file paths when known
+- include non-goals to prevent scope drift
+- update an existing spec only when the task is still the same reviewable slice
+- create a new dated spec when the task materially changes

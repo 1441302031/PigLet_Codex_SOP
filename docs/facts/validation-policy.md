@@ -1,20 +1,17 @@
 # Validation Policy
 
-All behavior changes require validation evidence.
+## Default
 
-## Required Checks
+Black-box validation is the default acceptance mechanism.
 
-1. Static checks (lint/type/format) when available.
-2. Unit or integration tests for affected paths.
-3. Manual verification for UX or workflow changes.
+## Add white-box validation when
 
-## Evidence Standard
+- logic is branch-heavy
+- regressions are likely
+- internal contracts matter
+- stateful behavior is fragile
+- a bugfix needs deterministic protection
 
-- Record command used.
-- Record high-level result.
-- Record known gaps when checks cannot run.
+## Rule
 
-## Failure Handling
-
-- Do not mark task done on failing required checks.
-- Document blockers and propose next action.
+Validation must be concrete, reviewable, and proportional to the task.

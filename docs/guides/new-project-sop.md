@@ -1,46 +1,21 @@
 # New Project SOP
 
-This guide defines the default execution process for a new task or project slice.
+## Goal
 
-## Stage 0: Intake
+Bootstrap a new engineering repository so Codex can work with stable project rules and reusable workflows.
 
-- Capture request, objective, constraints, and success signal.
-- Confirm out-of-scope boundaries.
+## Steps
 
-## Stage 1: Facts
+1. create root `AGENTS.md`
+2. create `.codex/config.toml`
+3. define `docs/specs/`, `docs/facts/`, and `skills/`
+4. add at least one task-spec template
+5. add at least one reusable skill
+6. test the workflow with one real task
 
-- Read `docs/facts/facts-index.md`.
-- Update or create facts only when evidence is clear.
-- Avoid speculative facts.
+## Acceptance
 
-## Stage 2: Plan
-
-- Use `docs/templates/plan-template.md`.
-- Split work into small, testable increments.
-- Flag unknowns and risks early.
-
-## Stage 3: Spec
-
-- Use `docs/templates/task-spec-template.md`.
-- Define acceptance criteria and validation method.
-- Include rollback strategy for risky changes.
-
-## Stage 4: Test Design
-
-- Design whitebox tests from expected code paths.
-- Include one happy path and one failure path minimum.
-
-## Stage 5: Implementation
-
-- Ship in small commits or logical steps.
-- Keep behavior changes traceable to spec criteria.
-
-## Stage 6: Validation and Summary
-
-- Run checks listed in `docs/facts/validation-policy.md`.
-- Summarize using `docs/templates/change-summary-template.md`.
-
-## Stage 7: Fact Writeback
-
-- Record newly confirmed knowledge.
-- Update `docs/facts/facts-index.md` with links.
+- Codex reads project instructions from `AGENTS.md`
+- task specs can be created and reused
+- stable facts have a clear home
+- at least one repeated workflow is captured as a skill

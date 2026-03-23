@@ -1,29 +1,45 @@
-# Skill: plan-to-spec
+---
+name: plan-to-spec
+description: Convert a plan, PRD, design note, or scoped request into one narrow executable task spec in docs/specs. Use when the user has direction but implementation should be narrowed before coding. Do not use when the task is already trivially narrow and spec-complete.
+---
+
+# Plan to Spec
 
 ## Purpose
 
-Convert a rough implementation plan into a complete task spec.
+Turn higher-level intent into a narrow, reviewable task spec.
 
 ## Inputs
 
-- Raw plan notes
-- Relevant facts from `docs/facts/`
-- `docs/templates/task-spec-template.md`
+- a plan
+- a PRD
+- a design note
+- a scoped request
+- an existing initiative slice
+
+## Outputs
+
+- one task spec in `docs/specs/YYYY-MM-DD-<task>.md`
 
 ## Steps
 
-1. Extract objective and scope from the plan.
-2. Identify assumptions and missing details.
-3. Draft technical plan and acceptance criteria.
-4. Define validation and rollback strategy.
-5. Produce final spec in `docs/specs/`.
+1. identify the smallest coherent implementation slice
+2. define objective, scope, and non-goals
+3. identify likely target files or systems
+4. define validation at the spec level
+5. keep the slice reviewable and narrow
+6. write the spec using `docs/templates/task-spec-template.md`
 
-## Output
+## Guardrails
 
-One completed spec file with all required sections.
+- do not generate a broad roadmap when one task spec is enough
+- do not include speculative implementation detail
+- do not omit non-goals
+- do not create multiple specs unless the user asks or the work is clearly separable
 
-## Quality Checks
+## Trigger phrases
 
-- Scope is bounded.
-- Acceptance criteria are testable.
-- Validation commands are explicit.
+- turn this plan into an executable task
+- derive a task spec
+- make this implementation-ready
+- convert this design into a coding task

@@ -1,57 +1,55 @@
-# 2026-03-23 Example Task
+# Task Spec: add export validation guard
 
-## Plan
+## Background
 
-- Objective: initialize the SOP repository with usable starter content.
-- Constraints:
-  - Keep the structure aligned with the repository tree.
-  - Focus on durable templates and guidance, not project-specific logic.
+The export workflow currently lacks an explicit validation guard before execution.
 
-1. Fill root documentation and config.
-2. Fill guides and fact documents.
-3. Fill spec and prompt templates.
-4. Fill skill docs and an example session.
+## Objective
 
-## Spec
+Add a narrow validation step so malformed export input is rejected before the export job starts.
 
-### Context
+## Scope
 
-Repository structure exists but file content was missing.
+- add one validation guard in the export flow
+- return a clear error for invalid export input
+- document the validation path if needed
 
-### Scope
+## Non-goals
 
-- In scope: populate key SOP documents and templates; define skill instructions for repeatable workflows.
-- Out of scope: project-specific business logic; CI pipeline integration.
+- redesign the export architecture
+- change unrelated export formatting
+- add broad refactors
 
-### Assumptions
+## Target files or areas
 
-- The repository is intended for agent-assisted engineering workflows.
-- Starter content is acceptable as long as it is internally consistent and reusable.
+- src/export/*
+- tests/export/*
 
-### Acceptance Criteria
+## Constraints
 
-- All files in current repository structure contain meaningful starter content.
-- Templates are reusable without additional restructuring.
-- Skills define purpose, inputs, steps, and outputs.
+- preserve current valid export behavior
+- keep changes minimal
+- validation must be explicit
 
-## Validation
+## Implementation approach
 
-- Verified all expected files exist.
-- Verified all expected files are non-empty.
+Add the smallest coherent guard near the entry point of the export flow.
 
-## Risks
+## Validation plan
 
-- Content may differ from private reference conversation.
+### Black-box checks
+- valid input still exports successfully
+- invalid input is rejected with a clear error
 
-## Mitigation
+### White-box checks
+- add only if validation logic branches in a regression-sensitive way
 
-- Update templates after receiving exact delta from source conversation.
+## Completion criteria
 
-## Change Summary
+- malformed input no longer proceeds into export execution
+- current valid exports continue to work
+- validation result is explicit and reviewable
 
-Initialized full SOP content package aligned with repository structure.
+## Write-back candidates
 
-## Fact Writeback
-
-- Updated file: `N/A`
-- Fact added or confirmed: `N/A`
+- reusable export validation rule if it is stable and worth reusing

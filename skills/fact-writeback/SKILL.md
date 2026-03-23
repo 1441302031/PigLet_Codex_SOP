@@ -1,27 +1,47 @@
-# Skill: fact-writeback
+---
+name: fact-writeback
+description: Decide whether information from a task should be written back into docs/facts and place it in the right fact file. Use when stable reusable context emerged from execution. Do not use for temporary notes, debugging chatter, or task-local reasoning.
+---
+
+# Fact Write-back
 
 ## Purpose
 
-Write newly validated project knowledge into durable fact documents.
+Write back only stable reusable project context.
 
 ## Inputs
 
-- Task spec and change summary
-- Validation evidence
-- Existing files in `docs/facts/`
+- implementation outcome
+- validation outcome
+- stable scope clarification
+- durable workflow or architecture decision
+
+## Outputs
+
+- proposed fact updates in `docs/facts/*`
+- no-op when write-back is not justified
+
+## Decision rule
+
+Write back only if the information is:
+
+- stable
+- reusable
+- worth re-reading later
 
 ## Steps
 
-1. Extract newly confirmed, stable information.
-2. Reject speculative or temporary notes.
-3. Update the relevant fact file.
-4. Update `docs/facts/facts-index.md` if needed.
+1. identify candidate facts
+2. reject temporary or local-only reasoning
+3. map each valid fact to the right file
+4. keep fact wording concise and durable
+5. avoid duplicating rules already captured elsewhere
 
-## Output
+## Guardrails
 
-A concise fact update that future tasks can rely on.
+Never write back:
 
-## Quality Checks
-
-- Every new fact has evidence.
-- No task-specific transient details are stored as facts.
+- temporary debugging notes
+- one-off implementation details
+- unstable exploration
+- conversational residue

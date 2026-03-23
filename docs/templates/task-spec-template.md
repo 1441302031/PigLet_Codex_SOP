@@ -1,65 +1,52 @@
-# Task Spec Template
+# Task Spec: <task title>
 
-## Metadata
+## Background
 
-- Date: `{{yyyy-mm-dd}}`
-- Owner: `{{owner}}`
-- Task: `{{task_name}}`
+Brief context for why this task exists.
 
-## Plan
+## Objective
 
-- Objective: `{{objective}}`
-- Constraints:
-  - `{{constraint_1}}`
-  - `{{constraint_2}}`
+What should be true after this change.
 
-1. `{{implementation_step_1}}`
-2. `{{implementation_step_2}}`
-3. `{{implementation_step_3}}`
+## Scope
 
-## Spec
+What is included in this task.
 
-### Context
+## Non-goals
 
-`{{context}}`
+What is explicitly out of scope.
 
-### Scope
+## Target files or areas
 
-- In scope: `{{in_scope}}`
-- Out of scope: `{{out_of_scope}}`
+- path/to/file-a
+- path/to/file-b
 
-### Assumptions
+## Constraints
 
-- `{{assumption_1}}`
-- `{{assumption_2}}`
+- technical constraints
+- product constraints
+- repository constraints
 
-### Acceptance Criteria
+## Implementation approach
 
-- `{{ac_1}}`
-- `{{ac_2}}`
-- `{{ac_3}}`
+Describe the smallest coherent change.
 
-## Validation
+## Validation plan
 
-- Command: `{{command_1}}`
-  Result: `{{result_1}}`
-- Command: `{{command_2}}`
-  Result: `{{result_2}}`
+### Black-box checks
+- check 1
+- check 2
 
-## Rollback
+### White-box checks
+- add only if justified
+- test/module/path
 
-`{{rollback_strategy}}`
+## Completion criteria
 
-## Risks and Mitigations
+- criterion 1
+- criterion 2
+- criterion 3
 
-- `{{risk}}` -> `{{mitigation}}`
+## Write-back candidates
 
-## Change Summary
-
-`{{summary}}`
-
-## Fact Writeback
-
-- Updated file: `{{fact_file_or_n/a}}`
-- Fact added or confirmed: `{{fact_summary_or_n/a}}`
-- Use `N/A` when the task does not produce a new durable, evidence-backed fact.
+Stable reusable facts only.

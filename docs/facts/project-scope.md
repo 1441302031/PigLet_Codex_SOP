@@ -1,23 +1,20 @@
 # Project Scope
 
-## Mission
+## Purpose
 
-Create and maintain a practical SOP repository for agent-assisted engineering delivery.
+This repository defines a Codex-ready SOP for AI-assisted engineering.
 
-## In Scope
+## In scope
 
-- Planning and specification workflows
-- Prompt templates for planner and executor roles
-- Validation and change-summary standards
-- Skill definitions for repeatable agent tasks
+- plan-first execution
+- task-spec-driven implementation
+- explicit validation
+- stable fact write-back
+- reusable skill-based workflows
 
-## Out of Scope
+## Out of scope
 
-- Product-specific implementation details
-- Vendor-locked toolchains
-- Runtime operations playbooks
-
-## Ownership
-
-- Humans own decisions and approvals.
-- Agents own execution quality and documentation completeness.
+- app-specific business logic
+- framework-specific boilerplate
+- long-term archival of all task reasoning
+- process-heavy governance

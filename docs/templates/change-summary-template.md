@@ -1,20 +1,21 @@
-# Change Summary Template
+# Change Summary
 
-## What Changed
+## What changed
 
-- `{{change_1}}`
-- `{{change_2}}`
+- item 1
+- item 2
 
-## Why It Changed
+## What did not change
 
-`{{reason}}`
+- item 1
+- item 2
 
-## Validation Evidence
+## Validation
 
-- `{{check_1}}` -> `{{result_1}}`
-- `{{check_2}}` -> `{{result_2}}`
+- validation step 1
+- validation step 2
 
-## Risk and Follow-up
+## Follow-up
 
-- Remaining risk: `{{risk}}`
-- Follow-up task: `{{follow_up}}`
+- follow-up 1
+- follow-up 2

@@ -1,16 +1,16 @@
+model = "gpt-5-codex"
+
+[sandbox_workspace_write]
+network_access = false
+
+[approval_policy]
+mode = "on-request"
+
+[tools]
+web_search = true
+
 [project]
 name = "ai-engineering-sop-codex"
-default_branch = "main"
 
-[paths]
-guides = "docs/guides"
-facts = "docs/facts"
-templates = "docs/templates"
-specs = "docs/specs"
-skills = "skills"
-examples = "examples"
-
-[workflow]
-require_spec_for_nontrivial_change = true
-require_validation_section = true
-require_fact_writeback = true
+[instructions]
+# Keep root instructions compact and rely on AGENTS.md + skills.

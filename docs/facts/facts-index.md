@@ -1,15 +1,13 @@
 # Facts Index
 
-Canonical list of durable project facts.
+This directory stores stable reusable project context.
 
-## Documents
+## Files
 
-- `project-scope.md`: mission, boundaries, and ownership model
-- `validation-policy.md`: required checks and evidence standard
-- `architecture-decisions.md`: decisions with context and consequences
+- `project-scope.md` current scope and boundaries
+- `validation-policy.md` reusable validation rules
+- `architecture-decisions.md` durable decisions worth re-reading
 
-## Update Rules
+## Rule
 
-- Facts must be evidence-backed.
-- Facts should be stable over time.
-- For temporary notes, use task specs instead of facts.
+Do not treat this directory as an archive of all task discussion.
