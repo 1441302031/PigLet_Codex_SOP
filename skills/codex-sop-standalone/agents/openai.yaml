@@ -1,0 +1,4 @@
+interface:
+  display_name: "Codex SOP Standalone"
+  short_description: "Standalone Codex SOP workflow"
+  default_prompt: "Use $codex-sop-standalone to handle this task with spec-first execution, explicit validation, and conditional fact write-back."
