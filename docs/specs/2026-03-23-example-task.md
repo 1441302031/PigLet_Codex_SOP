@@ -1,27 +1,34 @@
 # 2026-03-23 Example Task
 
-## Context
-
-Repository structure exists but file content was missing.
-
-## Scope
-
-- Populate key SOP documents and templates.
-- Define skill instructions for repeatable workflows.
-
-## Non-Scope
-
-- Project-specific business logic.
-- CI pipeline integration.
-
 ## Plan
+
+- Objective: initialize the SOP repository with usable starter content.
+- Constraints:
+  - Keep the structure aligned with the repository tree.
+  - Focus on durable templates and guidance, not project-specific logic.
 
 1. Fill root documentation and config.
 2. Fill guides and fact documents.
 3. Fill spec and prompt templates.
 4. Fill skill docs and an example session.
 
-## Acceptance Criteria
+## Spec
+
+### Context
+
+Repository structure exists but file content was missing.
+
+### Scope
+
+- In scope: populate key SOP documents and templates; define skill instructions for repeatable workflows.
+- Out of scope: project-specific business logic; CI pipeline integration.
+
+### Assumptions
+
+- The repository is intended for agent-assisted engineering workflows.
+- Starter content is acceptable as long as it is internally consistent and reusable.
+
+### Acceptance Criteria
 
 - All files in current repository structure contain meaningful starter content.
 - Templates are reusable without additional restructuring.
@@ -43,3 +50,8 @@ Repository structure exists but file content was missing.
 ## Change Summary
 
 Initialized full SOP content package aligned with repository structure.
+
+## Fact Writeback
+
+- Updated file: `N/A`
+- Fact added or confirmed: `N/A`
